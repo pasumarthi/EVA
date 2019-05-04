@@ -16,8 +16,8 @@ From feature extraction perspective 7*7 is equivalent  to three 3*3 filers
 
 ### How many times do we need to perform 3x3 convolution operation to reach 1x1 from 199x199 (show calculations)
 We need to perform 99 times 3*3 operations
-199*199
-197*197
+199x199
+197x197
 195*195
 193*193
 191*191
