@@ -15,7 +15,7 @@ From feature extraction perspective 7*7 is equivalent  to three 3*3 filers
 	Also it is always recommend to use odd combinations as it has central line that helps in detection of edges comparatively to even combination which does proper not have proper center line.
 
 ### How many times do we need to perform 3x3 convolution operation to reach 1x1 from 199x199 (show calculations)
-We need to perform 99 times 3*3 operations
+We need to perform 99 times 3*3 operations <br/>
 199x199
 197x197
 195*195
