@@ -18,12 +18,12 @@ From feature extraction perspective 7*7 is equivalent  to three 3*3 filers
 We need to perform 99 times 3*3 operations <br/>
 199x199
 197x197
-195*195
-193*193
-191*191
-189*189
-187*187
-185*183
+195X195
+193x193
+191x191
+189x189
+187x187
+185x183
 181*181
 179*179
 177 *177
