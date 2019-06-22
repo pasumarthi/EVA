@@ -1,6 +1,6 @@
-## Reciptive filed calculation for Inception model
+## Receptive field calculation for Inception model
 
-| Layer | Feature map | Reciptive Field |Jump |
+| Layer | Feature map | Receptive Field |Jump |
 | --- | --- | --- | --- |
 | Conv(7x7) S=2 | 112x112x64 | 7x7 | 1 |
 | MaxPool(3x3) S=2 | 56x56 | 11x11 | 2 |
