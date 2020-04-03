@@ -47,6 +47,7 @@ Clip the future values a' to a range of values with in the mean zero Gaussian.
 
 Using both s' and a' with added noise calculate Q1t and Q2t values for both critic targets as its forward pass.
 
+
 <p align="center">
   <img src="https://github.com/pasumarthi/EVA/blob/master/Phase2/images/Step7.jpg" width="350" >
  </p>
@@ -63,7 +64,7 @@ We take the minimum value to avoid the over estimation of the Q-value and overco
 Step-9:
 
 Target Q-values(min of two critic targets), is discounted from next_state(s') to state(s) and added to current state-action reward.(Bellmen eq)
-When the terminal state of the episode is reached, the next state does not exist. To show this we use flag 'done', with done being 1 if the state is the terminal state 0 otherwise. If we reached end of episode done=1, and right side of plus symbol becomes zero.
+When the terminal state of the episode is reached, the next state does not exist. To show this we use flag 'done', with done being 1 if the state is the terminal state 0 otherwise. 
 detatch in pytorch
 
 <p align="center">
@@ -80,6 +81,7 @@ Predict state(s) Q-values with critic-model using state(s) and corresponding act
 Step-11:
 
 calculate mse-loss using the optimal target Q-value as reference, with respect to corresponding Q-values(Q1,Q2) of critic-model.
+It concurrently learns two Q-functions,Q1t,Q2t by mean square Bellman error minimization,
 
 <p align="center">
   <img src="https://github.com/pasumarthi/EVA/blob/master/Phase2/images/Step11.jpg" width="350" >
