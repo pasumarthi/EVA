@@ -36,8 +36,8 @@ Using next_state(s') calculate next action(a') with the actor target model as it
  
  Step-6:
 
-Add noise to the next action(a') from a normal distribution.
-Clip the a' values to main a range of values with in the normal distribution.
+Add mean zero Gaussian noise to the next action(a') during training
+Clip the future values a' to a range of values with in the mean zero Gaussian.
 
 <p align="center">
   <img src="https://github.com/pasumarthi/EVA/blob/master/Phase2/images/Step6.jpg" width="350" >
