@@ -1,3 +1,21 @@
+Step-2:
+
+
+
+<p align="center">
+  <img src="https://github.com/pasumarthi/EVA/blob/master/Phase2/images/Step2.jpg" width="350" >
+ </p>
+
+Step-3:
+
+
+
+<p align="center">
+  <img src="https://github.com/pasumarthi/EVA/blob/master/Phase2/images/Step3.jpg" width="350" >
+ </p>
+
+
+
 
 Step-4:
 
