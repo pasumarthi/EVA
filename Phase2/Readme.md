@@ -1,6 +1,6 @@
 Step-2:
 
-
+2 actor model .Actor model is trained using Backpropogation. actor Target using Poluyok averaging  updates the traget modles with delay
 
 <p align="center">
   <img src="https://github.com/pasumarthi/EVA/blob/master/Phase2/images/Step2.jpg" width="350" >
@@ -8,7 +8,7 @@ Step-2:
 
 Step-3:
 
-
+2 versions of critic  model .Critic  model is trained using Backpropogation. Critic  Target using Poluyok averaging  Updates the critic models with delay
 
 <p align="center">
   <img src="https://github.com/pasumarthi/EVA/blob/master/Phase2/images/Step3.jpg" width="350" >
