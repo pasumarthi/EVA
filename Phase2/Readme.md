@@ -115,8 +115,8 @@ Using the mse-loss from the Step-11, backpropagate to critic-models.
 Step-13:
 
 We use critic-model(Q1) to update the actor model, by applying graiant ascent on the Q-value approximation function.
-Rather than doing gradinat ascent on Q-value, we are doing gradint descent on negative of Q-value.
-For every two critic-model updtes, we update the actor-model once. This is to delay the actor-model update, to avaoid instant updates to critics for stability.
+Rather than doing gradiant ascent on Q-value, we are doing gradiant descent on negative of Q-value.
+For every two critic-model updates, we update the actor-model once. This is to delay the actor-model update, to avoid instant updates to critics for stability.
 
 <p align="center">
   <img src="https://github.com/pasumarthi/EVA/blob/master/Phase2/images/Step13.jpg" width="350" >
