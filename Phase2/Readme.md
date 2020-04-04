@@ -1,6 +1,21 @@
+Step-1:
+
+Here  ReplayBUffer is defined. Samples will get  information corresponding to each state in the state space of the environment, as the agent traverses each state the buffer is updated with the information of the state(state, next_state, action, reward, done).
+
+Initially the buffer values are empty, as the agent traverses in the environment we keep appending the (s,s',a,r,done) values to the buffer. Once the buffer is filled we use the same add function to replace a buffer location with the latest updated state.
+
+The buffer is sampled in batches of desired size. These batched are used to train the TD3 algorithm in off-policy manner.
+
+<p align="center">
+  <img src="https://github.com/pasumarthi/EVA/blob/master/Phase2/images/Step1.jpg" width="350" >
+ </p>
+
+
 Step-2:
 
-2 actor model .Actor model is trained using Backpropogation. actor Target using Poluyok averaging. .And  updates the actor target models with delay
+Actor network, is a neural network. Used as ploicy approximater, which predicts possible action values for the given state(s).
+In this example we are using all Fully connected layers, but depending on the state(s) we choose the network. If the state is an image we use CNN based model.
+We use the same Actor network, as model and target. By create two different objects for model and target actors, using the same architecture.
 
 <p align="center">
   <img src="https://github.com/pasumarthi/EVA/blob/master/Phase2/images/Step2.jpg" width="350" >
@@ -8,7 +23,9 @@ Step-2:
 
 Step-3:
 
-2 versions of critic  model .Critic  model is trained using Backpropogation. Critic  Target using Poluyok averaging  Updates the critic models with delay
+Critic network, is a neural network. Used as optimal value approximater(max Q-value), for the given state and action(coming from the corresponding actor). The foward method builds two critics at once.
+In this example we are using all Fully connected layers, but depending on the state(s) we choose the network. If the state is an image we use CNN based model.
+2 versions of critic  model .Critic  model is trained using Backpropogation. Critic  Target using Polyok averaging  Updates the critic models with delay
 
 <p align="center">
   <img src="https://github.com/pasumarthi/EVA/blob/master/Phase2/images/Step3.jpg" width="350" >
