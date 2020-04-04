@@ -1,6 +1,6 @@
 Step-2:
 
-2 actor model .Actor model is trained using Backpropogation. actor Target using Poluyok averaging  updates the traget modles with delay
+2 actor model .Actor model is trained using Backpropogation. actor Target using Poluyok averaging. .And  updates the actor target models with delay
 
 <p align="center">
   <img src="https://github.com/pasumarthi/EVA/blob/master/Phase2/images/Step2.jpg" width="350" >
