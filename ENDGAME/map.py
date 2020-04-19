@@ -20,7 +20,7 @@ from PIL import Image as PILImage
 from kivy.graphics.texture import Texture
 
 # Importing the Dqn object from our AI in ai.py
-from ai1 import TD3
+from ai import TD3
 
 # Adding this line if we don't want the right click to put a red point
 Config.set('input', 'mouse', 'mouse,multitouch_on_demand')
